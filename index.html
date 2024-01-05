@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Jeremy's 33rd Birthday Party</title>
-    <!-- Essential Open Graph Tags -->
-    <meta property="og:title" content="Jeremy's 33rd Birthday" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.jeremysbirthday.party" />
-    <meta property="og:image" content="https://www.jeremysbirthday.party/static/me.jpeg" />
-    <meta property="og:description" content="You are invited to Jeremy's Birthday!!" />
+    <head>
+        <title>Jeremy's 33rd Birthday Party</title>
+        <!-- Essential Open Graph Tags -->
+        <meta property="og:title" content="Jeremy's 33rd Birthday" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.jeremysbirthday.party" />
+        <meta
+            property="og:image"
+            content="https://www.jeremysbirthday.party/static/me.jpeg"
+        />
+        <meta
+            property="og:description"
+            content="You are invited to Jeremy's Birthday!!"
+        />
 
-    <!-- Optional: Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.jeremysbirthday.party/static/me.jpeg">
+        <!-- Optional: Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:image"
+            content="https://www.jeremysbirthday.party/static/me.jpeg"
+        />
 
-     <!-- Viewport Meta Tag for Responsive Design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Viewport Meta Tag for Responsive Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        .party-details {
-            margin: 20px;
-            font-size: 20px;
-        }
-        .rsvp-button {
-            display: inline-block;
-            margin: 20px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .rsvp-button:hover {
-            background-color: #45a049;
-        }
-
-        img {
-            width: 50%;
-            max-width: 300px;
-            height: auto;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 600px) {
+        <style>
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
             .party-details {
-                font-size: 16px;
+                margin: 20px;
+                font-size: 20px;
             }
             .rsvp-button {
-                padding: 8px 15px;
+                display: inline-block;
+                margin: 20px;
+                padding: 10px 20px;
+                background-color: #4caf50;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
             }
-            img {
-                width: 90%;
-                max-width: 300px; /* Adjusts image size while maintaining the max-width limit */
+            .rsvp-button:hover {
+                background-color: #45a049;
             }
-        }
-    </style>
-</head>
-<body>
-    <script src="scripts/confetti.js"></script>
-    <script>
-        window.onload = function() {
-            startConfetti();
-            console.log('Confetti started');
-        };
-    </script>
-    <h1>Jeremy's 33rd Birthday Party!</h1>
-    <img src="static/me.jpeg" alt="Birthday Photo" style="max-width: 100%; height: auto;" />
-    <div class="party-details">
-        <p>[Party Details Here]</p>
-    </div>
-    <a href="https://forms.gle/9ojXcBRyT2YrTLGd7" class="rsvp-button" target="_blank">RSVP Here</a>
-</body>
-</html>
 
+            img {
+                width: 50%;
+                max-width: 300px;
+                height: auto;
+            }
+
+            /* Responsive Styles */
+            @media (max-width: 600px) {
+                .party-details {
+                    font-size: 16px;
+                }
+                .rsvp-button {
+                    padding: 8px 15px;
+                }
+                img {
+                    width: 90%;
+                    max-width: 300px; /* Adjusts image size while maintaining the max-width limit */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Jeremy's 33rd Birthday Party!</h1>
+        <img
+            src="static/me.jpeg"
+            alt="Birthday Photo"
+            style="max-width: 100%; height: auto"
+        />
+        <div class="party-details">
+            <h2>Party Details</h2>
+            <p><strong>When?</strong> January 20, 7:00 PM</p>
+            <p><strong>Where?</strong> <a href="https://theshouthouse.com" target="_blank">The Shouthouse</a>, Downtown San Diego</p>
+            <p>We will make the table reservations based on your RSVPs, so make sure to let us know if you're coming. Also, there's a $20 cover per person you can either Venmo @jmoyers14 or just bring it to the party. Can't wait to see you all there!</p>
+        </div>
+        <a
+            href="https://forms.gle/9ojXcBRyT2YrTLGd7"
+            class="rsvp-button"
+            target="_blank"
+            >RSVP Here</a
+        >
+
+        <!-- Importing JavaScript file -->
+        <script src="scripts/confetti.js"></script>
+        <script>
+            window.onload = function () {
+                startConfetti();
+                console.log("Confetti started");
+            };
+        </script>
+    </body>
+</html>
