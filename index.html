@@ -1,25 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-        <title>Jeremy's 33rd Birthday Party</title>
+        <title>Jeremy's 34th Birthday Party</title>
         <!-- Essential Open Graph Tags -->
-        <meta property="og:title" content="Jeremy's 33rd Birthday" />
+        <meta property="og:title" content="Jeremy's 34th Birthday" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.jeremysbirthday.party" />
         <meta
             property="og:image"
-            content="https://www.jeremysbirthday.party/static/me.jpeg"
+            content="https://www.jeremysbirthday.party/static/dude.jpeg"
         />
         <meta
             property="og:description"
-            content="You are invited to Jeremy's Birthday!!"
+            content="Jeremy's Birthday: January 18th"
         />
 
         <!-- Optional: Twitter Card data -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta
             name="twitter:image"
-            content="https://www.jeremysbirthday.party/static/me.jpeg"
+            content="https://www.jeremysbirthday.party/static/dude.jpeg"
         />
 
         <!-- Viewport Meta Tag for Responsive Design -->
@@ -34,6 +34,12 @@
                 margin: 20px;
                 font-size: 20px;
             }
+            .party-details-sub {
+                font-size: 16px;
+            }
+            .sign-off-message {
+                font-size: 25px;
+            }
             .rsvp-button {
                 display: inline-block;
                 margin: 20px;
@@ -47,10 +53,60 @@
                 background-color: #45a049;
             }
 
+            .calendar-button {
+                display: inline-block;
+                margin: 20px;
+                padding: 10px 20px;
+                background-color: #4caf50;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+
+            .calendar-button:hover {
+                background-color: #1976d2;
+            }
+
+            .content-wrapper {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
             img {
                 width: 50%;
                 max-width: 300px;
                 height: auto;
+            }
+
+            .qa-section {
+                text-align: left;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .question {
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .answer {
+                margin-bottom: 20px;
+                color: #666;
+                font-size: 16px;
+            }
+
+            .answer a {
+                color: #eea73b;
+                text-decoration: none;
+            }
+
+            .answer a:hover {
+                text-decoration: underline;
             }
 
             /* Responsive Styles */
@@ -58,8 +114,11 @@
                 .party-details {
                     font-size: 16px;
                 }
-                .rsvp-button {
-                    padding: 8px 15px;
+                .party-details-subtext {
+                    font-size: 12px;
+                }
+                .sign-off-message {
+                    font-size: 20px;
                 }
                 img {
                     width: 90%;
@@ -69,24 +128,52 @@
         </style>
     </head>
     <body>
-        <h1>Jeremy's 33rd Birthday Party!</h1>
+        <h1>You are invited!</h1>
         <img
-            src="static/me.jpeg"
+            src="static/dude.jpeg"
             alt="Birthday Photo"
             style="max-width: 100%; height: auto"
         />
+
         <div class="party-details">
             <h2>Party Details</h2>
-            <p><strong>When?</strong> January 20, <s>6:00 PM</s> 5:30 PM</p>
-            <p><strong>Where?</strong> <s><a href="https://theshouthouse.com" target="_blank">The Shouthouse</a></s><a href="https://punchbowlsocial.com/location/san-diego/"> Punchbowl Social</a>, Downtown San Diego</p>
-            <p>Can't wait to see you all there!</p>
+            <div class="qa-section">
+                <p class="question">When is the party?</p>
+                <p class="answer">Saturday January 18</p>
+
+                <p class="question">Where is the party?</p>
+                <p class="answer">
+                    <a
+                        href="https://maps.google.com/?q=621+West+Felicita+Ave+Escondido+CA+92025"
+                    >
+                        621 West Felicita Ave<br />
+                        Escondido CA, 92025
+                    </a>
+                </p>
+
+                <p class="question">Is there a theme?</p>
+                <p class="answer">The theme is The Big Lebowski</p>
+
+                <p class="question">Do I need to dress up?</p>
+                <p class="answer">
+                    No! Dressing up is optional, because it turns out
+                    <a
+                        href="https://www.amazon.com/s?k=adult+jelly+sandals+men&crid=2DWKE8JYUN6LT&sprefix=adult+jelly+sandals+me%2Caps%2C206&ref=nb_sb_noss_2"
+                        >adult sized jelly sandals</a
+                    >
+                    are expensive.
+                </p>
+
+                <p class="question">Are kids okay?</p>
+                <p class="answer">It's an adult party but kids are welcome!</p>
+            </div>
         </div>
-        <a
-            href="https://forms.gle/9ojXcBRyT2YrTLGd7"
-            class="rsvp-button"
-            target="_blank"
-            >RSVP Here</a
-        >
+
+        <a href="static/jeremy-birthday.ics" class="calendar-button">
+            📅 Add to Calendar
+        </a>
+
+        <p class="sign-off-message">Can't wait to see you all there!</p>
 
         <!-- Importing JavaScript file -->
         <script src="scripts/confetti.js"></script>
